@@ -14,6 +14,7 @@ const ITCHIO_PASSWORD = 'nazisvscommies';
 
 // Fill these in as each store page / build goes live. A null URL renders its
 // button greyed out with a COMING SOON badge, so no other change is needed.
+const MAC_DOWNLOAD_URL: string | null = null;
 const ANDROID_APK_URL: string | null = null;
 const STEAM_WISHLIST_URL: string | null = null;
 const STEAM_DOWNLOAD_URL: string | null = null;
@@ -22,7 +23,7 @@ const APP_STORE_BETA_URL: string | null = null;
 
 const SCREENSHOT_COUNT = 5;
 
-type ModalKey = 'windows' | 'itch' | 'android';
+type ModalKey = 'windows' | 'mac' | 'itch' | 'android';
 
 type DownloadButtonProps = {
   src: string;
@@ -194,6 +195,20 @@ export default function NvCGame() {
         </div>
 
         <div className="download-group">
+          <h3 className="download-group-title">{t.macGroup}</h3>
+          <div className="download-buttons-row">
+            <DownloadButton
+              src="/assets/NvC/demo_direct_download_button.svg"
+              alt={t.macDirectAlt}
+              width={250}
+              height={81}
+              comingSoonLabel={t.comingSoon}
+              onClick={MAC_DOWNLOAD_URL ? () => setActiveModal('mac') : undefined}
+            />
+          </div>
+        </div>
+
+        <div className="download-group">
           <h3 className="download-group-title">{t.mobileGroup}</h3>
           <div className="download-buttons-row">
             <DownloadButton
@@ -230,6 +245,17 @@ export default function NvCGame() {
             confirmLabel={t.continueToDownload}
             confirmHref={WINDOWS_DOWNLOAD_URL}
             steps={t.windowsSteps}
+            onClose={closeModal}
+          />
+        )}
+
+        {activeModal === 'mac' && MAC_DOWNLOAD_URL && (
+          <DownloadModal
+            title={t.modalTitle}
+            cancelLabel={t.modalCancel}
+            confirmLabel={t.continueToDownload}
+            confirmHref={MAC_DOWNLOAD_URL}
+            steps={t.macSteps}
             onClose={closeModal}
           />
         )}
