@@ -10,9 +10,11 @@ type NvcGameTexts = {
   symbolAlt: string;
   getTheGame: string;
   pcGroup: string;
+  macGroup: string;
   mobileGroup: string;
   comingSoon: string;
   windowsDirectAlt: string;
+  macDirectAlt: string;
   itchDemoAlt: string;
   steamWishlistAlt: string;
   steamDownloadAlt: string;
@@ -24,6 +26,7 @@ type NvcGameTexts = {
   continueToDownload: string;
   continueToItch: string;
   windowsSteps: ReactNode[];
+  macSteps: ReactNode[];
   itchSteps: (itchPassword: string) => ReactNode[];
   androidSteps: ReactNode[];
   screenshots: string;
@@ -38,10 +41,12 @@ const en: NvcGameTexts = {
   tagline: 'Learn WWII history by getting addicted to this incredible TD',
   symbolAlt: 'NvC Symbol',
   getTheGame: 'GET THE GAME',
-  pcGroup: 'PC',
+  pcGroup: 'PC (WINDOWS)',
+  macGroup: 'MAC',
   mobileGroup: 'MOBILE',
   comingSoon: 'COMING SOON',
   windowsDirectAlt: 'Windows Direct Download',
+  macDirectAlt: 'Mac Direct Download',
   itchDemoAlt: 'Demo Download on itch.io',
   steamWishlistAlt: 'Wishlist on Steam',
   steamDownloadAlt: 'Download on Steam',
@@ -61,6 +66,17 @@ const en: NvcGameTexts = {
     </>,
     <>
       The file is <strong>100% safe</strong> — no viruses, no malware. When you double-click the <code>.exe</code>, Windows Defender SmartScreen may show a warning. Click <strong>&ldquo;More information&rdquo;</strong> and then <strong>&ldquo;Run anyway&rdquo;</strong> to launch the game.
+    </>,
+  ],
+  macSteps: [
+    <>
+      You will be redirected to <strong>Google Drive</strong> to download the demo.
+    </>,
+    <>
+      After downloading, <strong>unzip the file</strong> and drag the app wherever you like (e.g. your <strong>Applications</strong> folder).
+    </>,
+    <>
+      The file is <strong>100% safe</strong> — no viruses, no malware. Since the app is not from the App Store, macOS may block it on first launch. <strong>Right-click the app and choose &ldquo;Open&rdquo;</strong>, then confirm with <strong>&ldquo;Open&rdquo;</strong> again. If it is still blocked, go to <strong>System Settings → Privacy &amp; Security</strong> and click <strong>&ldquo;Open Anyway&rdquo;</strong>.
     </>,
   ],
   itchSteps: (itchPassword) => [
@@ -100,10 +116,12 @@ const es: NvcGameTexts = {
   tagline: 'Aprende la historia de la Segunda Guerra Mundial enganchándote a este increíble tower defense',
   symbolAlt: 'Símbolo de NvC',
   getTheGame: 'CONSIGUE EL JUEGO',
-  pcGroup: 'PC',
+  pcGroup: 'PC (WINDOWS)',
+  macGroup: 'MAC',
   mobileGroup: 'MÓVIL',
   comingSoon: 'PRÓXIMAMENTE',
   windowsDirectAlt: 'Descarga directa para Windows',
+  macDirectAlt: 'Descarga directa para Mac',
   itchDemoAlt: 'Descargar la demo en itch.io',
   steamWishlistAlt: 'Añadir a la lista de deseos en Steam',
   steamDownloadAlt: 'Descargar en Steam',
@@ -123,6 +141,17 @@ const es: NvcGameTexts = {
     </>,
     <>
       El archivo es <strong>100% seguro</strong>: sin virus ni malware. Al hacer doble clic en el <code>.exe</code>, Windows Defender SmartScreen puede mostrar una advertencia. Haz clic en <strong>«Más información»</strong> y luego en <strong>«Ejecutar de todas formas»</strong> para abrir el juego.
+    </>,
+  ],
+  macSteps: [
+    <>
+      Te vamos a redirigir a <strong>Google Drive</strong> para descargar la demo.
+    </>,
+    <>
+      Después de descargar, <strong>descomprime el archivo</strong> y arrastra la app a donde quieras (por ejemplo, a la carpeta <strong>Aplicaciones</strong>).
+    </>,
+    <>
+      El archivo es <strong>100% seguro</strong>: sin virus ni malware. Como la app no viene de la App Store, macOS puede bloquearla al abrirla por primera vez. <strong>Haz clic derecho en la app y elige «Abrir»</strong>, y confirma con <strong>«Abrir»</strong> otra vez. Si sigue bloqueada, ve a <strong>Ajustes del Sistema → Privacidad y seguridad</strong> y haz clic en <strong>«Abrir de todos modos»</strong>.
     </>,
   ],
   itchSteps: (itchPassword) => [
