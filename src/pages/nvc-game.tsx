@@ -8,14 +8,14 @@ import { nvcGameDict } from '../i18n/pages/nvcGame';
 import { useT } from '../i18n/useT';
 import s from './NvcGame.module.css';
 
-const WINDOWS_DOWNLOAD_URL = 'https://drive.google.com/open?id=1bp8yi4pSKOiyuXPT3VtJK_pnPEot3E9L&usp=drive_fs';
+const WINDOWS_DOWNLOAD_URL = 'https://github.com/diablohumastudio/nvc-releases/releases/download/builds/NazisVsCommies-windows.zip';
 const ITCHIO_URL = 'https://diablohumastudio.itch.io/nazis-vs-commies';
 const ITCHIO_PASSWORD = 'nazisvscommies';
 
 // Fill these in as each store page / build goes live. A null URL renders its
 // button greyed out with a COMING SOON badge, so no other change is needed.
 const MAC_DOWNLOAD_URL: string | null = 'https://github.com/diablohumastudio/nvc-releases/releases/download/builds/NazisVsCommies-mac.zip';
-const ANDROID_APK_URL: string | null = null;
+const ANDROID_APK_URL: string | null = 'https://github.com/diablohumastudio/nvc-releases/releases/download/builds/NazisVsCommies-android.apk';
 const STEAM_WISHLIST_URL: string | null = null;
 const STEAM_DOWNLOAD_URL: string | null = null;
 const GOOGLE_PLAY_BETA_URL: string | null = null;

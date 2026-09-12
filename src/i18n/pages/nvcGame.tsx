@@ -59,7 +59,7 @@ const en: NvcGameTexts = {
   continueToItch: 'Continue to itch.io',
   windowsSteps: [
     <>
-      You will be redirected to <strong>Google Drive</strong> to download the demo.
+      The demo download will start <strong>directly</strong> (hosted on our GitHub).
     </>,
     <>
       After downloading, <strong>unzip the file</strong> and make sure both the <code>.exe</code> and <code>.dll</code> files are in the <strong>same folder</strong> before running the game.
@@ -134,7 +134,7 @@ const es: NvcGameTexts = {
   continueToItch: 'Continuar a itch.io',
   windowsSteps: [
     <>
-      Te vamos a redirigir a <strong>Google Drive</strong> para descargar la demo.
+      La descarga de la demo comenzará <strong>directamente</strong> (alojada en nuestro GitHub).
     </>,
     <>
       Después de descargar, <strong>descomprime el archivo</strong> y asegúrate de que el <code>.exe</code> y el <code>.dll</code> queden en la <strong>misma carpeta</strong> antes de abrir el juego.
