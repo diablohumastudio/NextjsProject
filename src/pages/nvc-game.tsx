@@ -14,7 +14,7 @@ const ITCHIO_PASSWORD = 'nazisvscommies';
 
 // Fill these in as each store page / build goes live. A null URL renders its
 // button greyed out with a COMING SOON badge, so no other change is needed.
-const MAC_DOWNLOAD_URL: string | null = 'https://drive.google.com/file/d/1aaq4XTM47rY8q5GzMoF-ZyzGb2QeUi1D/view';
+const MAC_DOWNLOAD_URL: string | null = 'https://github.com/diablohumastudio/nvc-releases/releases/download/builds/NazisVsCommies-mac.zip';
 const ANDROID_APK_URL: string | null = null;
 const STEAM_WISHLIST_URL: string | null = null;
 const STEAM_DOWNLOAD_URL: string | null = null;
