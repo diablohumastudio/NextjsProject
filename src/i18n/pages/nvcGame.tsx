@@ -70,7 +70,7 @@ const en: NvcGameTexts = {
   ],
   macSteps: [
     <>
-      You will be redirected to <strong>Google Drive</strong> to download the demo.
+      The demo download will start <strong>directly</strong> (hosted on our GitHub).
     </>,
     <>
       After downloading, <strong>unzip the file</strong> and drag the app wherever you like (e.g. your <strong>Applications</strong> folder).
@@ -145,7 +145,7 @@ const es: NvcGameTexts = {
   ],
   macSteps: [
     <>
-      Te vamos a redirigir a <strong>Google Drive</strong> para descargar la demo.
+      La descarga de la demo comenzará <strong>directamente</strong> (alojada en nuestro GitHub).
     </>,
     <>
       Después de descargar, <strong>descomprime el archivo</strong> y arrastra la app a donde quieras (por ejemplo, a la carpeta <strong>Aplicaciones</strong>).
